@@ -13,8 +13,19 @@ body {
 
 main {
   display: flex;
-  width: 500px;
-  height: 500px;
+  width: 650px;
+  height: 800px;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.result_main {
+  display: flex;
+  width: 650px;
+  height: 800px;
   border-radius: 10px;
   background-color: var(--background-color);
   justify-content: center;
@@ -30,26 +41,27 @@ button {
   display: flex;
   padding-bottom: 20px;
   flex-direction: row;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
-  width: 400px;
+  width: 500px;
 }
 
 .second-container {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 500px;
 }
 
 .question-p {
-  margin: 0px 0px 8px 0px;
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
 }
 
 progress[value] {
   -webkit-appearance: none;
   appearance: none;
-  width: 150px;
-  height: 25px;
+  width: 200px;
+  height: 40px;
 }
 
 progress[value]::-webkit-progress-bar {
@@ -71,8 +83,8 @@ progress[value]::-webkit-progress-value {
 }
 
 .question {
-  margin: 10px 0px;
-  font-size: 25px;
+  margin: 0px 0px 25px 0px;
+  font-size: 35px;
 }
 
 .child1,
@@ -80,11 +92,11 @@ progress[value]::-webkit-progress-value {
 .child3,
 .child4,
 .child5 {
-  height: 38px;
-  border: 1px solid var(--javascript-yellow);
+  height: 50px;
+  border: 3px solid var(--javascript-yellow);
   border-left: none;
   border-radius: 10px;
-  margin-top: 18px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   transition: box-shadow 0.3s;
@@ -110,22 +122,32 @@ progress[value]::-webkit-progress-value {
 .child-inner {
   background-color: var(--javascript-yellow);
   color: white;
-  padding: 8px 20px;
-  margin: 0 15px 0 0;
+  padding: 14px 25px;
+  margin: 0 30px 0 0;
   border-start-start-radius: 10px;
   border-end-start-radius: 10px;
 }
 
 .score {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 40px;
   margin: 0;
-  margin-bottom: 30px;
   color: var(--javascript-yellow);
 }
 
 .restart {
-  padding: 5px 10px;
+  padding: 6px 15px;
+  font-size: 25px;
   background-color: var(--javascript-yellow);
   border: none;
+  border-radius: 10px;
+}
+
+.result_main * {
+  margin-bottom: 30px;
+}
+
+.result_main > h1 {
+  margin-top: 0;
+  font-size: 50px;
 }

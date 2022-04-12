@@ -1,7 +1,7 @@
 const resultPage = () => {
   const bodyElement = document.querySelector('body');
   bodyElement.innerHTML = `
-    <main>
+    <main class='result_main'>
       <h1>Result</h1>
       <article class='score'>${score}</article>
       <a href='quiz.html'>

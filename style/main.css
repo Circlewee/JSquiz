@@ -13,8 +13,8 @@ body {
 
 main {
   display: flex;
-  width: 500px;
-  height: 400px;
+  width: 800px;
+  height: 800px;
   border-radius: 10px;
   background-color: var(--background-color);
   justify-content: space-evenly;
@@ -22,16 +22,20 @@ main {
   flex-direction: column;
 }
 
+main > h1 {
+  font-size: 60px;
+}
+
 main > h1 > strong {
   color: #f7df1e;
 }
 
 main > a {
-  padding: 4px 14px;
+  padding: 4px 20px;
   border: 1px solid var(--javascript-yellow-dark);
   border-radius: 10px;
   background-color: var(--javascript-yellow);
-  font-size: 22px;
+  font-size: 50px;
   color: var(--font-color);
   text-decoration: none;
   transition: box-shadow 0.3s ease;
@@ -44,6 +48,6 @@ main > a:hover {
 footer {
   position: absolute;
   bottom: 1%;
-  font-size: 8px;
+  font-size: 16px;
   color: rgba(128, 128, 128, 0.4);
 }
