@@ -148,6 +148,6 @@ progress[value]::-webkit-progress-value {
 }
 
 .result_main > h1 {
-  margin-top: 0;
   font-size: 50px;
+  margin-top: 0;
 }
