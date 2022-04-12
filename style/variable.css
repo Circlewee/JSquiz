@@ -1,0 +1,8 @@
+:root {
+  --background-color: rgba(255, 255, 255, 0.4);
+  --border-color: #aaaaaa;
+  --font-color: black;
+  --javascript-yellow: #f8de15;
+  --javascript-yellow-dark: #d1bb17;
+  --font-family: 'Noto Sans KR', sans-serif;
+}

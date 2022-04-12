@@ -1,0 +1,131 @@
+@import url('./variable.css');
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-family: var(--font-family);
+  background: linear-gradient(to bottom right, #606c88, #3f4c6b);
+}
+
+main {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+}
+
+.first-container {
+  display: flex;
+  padding-bottom: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.second-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+.question-p {
+  margin: 0px 0px 8px 0px;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 150px;
+  height: 25px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: transparent;
+  border: 2px solid var(--javascript-yellow);
+}
+
+progress[value]::-webkit-progress-value {
+  background: var(--javascript-yellow);
+  background-size: 40px 20px, 10%;
+}
+
+.score-container {
+  text-align: center;
+}
+
+.question-meter {
+  text-align: center;
+}
+
+.question {
+  margin: 10px 0px;
+  font-size: 25px;
+}
+
+.child1,
+.child2,
+.child3,
+.child4,
+.child5 {
+  height: 38px;
+  border: 1px solid var(--javascript-yellow);
+  border-left: none;
+  border-radius: 10px;
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.3s;
+}
+
+.child1:hover,
+.child2:hover,
+.child3:hover,
+.child4:hover,
+.child5:hover {
+  box-shadow: 0 5px 10px 1px var(--javascript-yellow-dark);
+  cursor: pointer;
+}
+
+.correct {
+  background-color: green;
+}
+
+.wrong {
+  background-color: red;
+}
+
+.child-inner {
+  background-color: var(--javascript-yellow);
+  color: white;
+  padding: 8px 20px;
+  margin: 0 15px 0 0;
+  border-start-start-radius: 10px;
+  border-end-start-radius: 10px;
+}
+
+.score {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 30px;
+  color: var(--javascript-yellow);
+}
+
+.restart {
+  padding: 5px 10px;
+  background-color: var(--javascript-yellow);
+  border: none;
+}
